@@ -25,7 +25,7 @@ const mongoose = require("mongoose");
 //string de conexão com o MongoBD 
 
 const uri = 
-    "mongodb+srv://thiagolivramento:slayer82@cluster0.nxdfb.mongodb.net/db_LPIII?retryWrites=true&w=majority";
+    "mongodb+srv://thiagolivramento:<senha>@cluster0.nxdfb.mongodb.net/nome_da_base?retryWrites=true&w=majority";
 
 mongoose
   .connect(uri, {useNewUrlParser: true, useUnifiedTopology: true})
