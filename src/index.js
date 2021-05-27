@@ -218,7 +218,7 @@ router
   Sala.findById(req.params.id, function(error, sala){
      if (error) res.send(error);
      //solicitação de dados para serem validados pelo schema 'sala'
-     sala.name = req.body.sala;
+     sala.name = req.body.name;
      sala.lotacao = req.body.lotacao;
      sala.save(function(error){
        if (error) res.send(error);
