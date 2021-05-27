@@ -135,7 +135,7 @@ router
       //A solicitação os dados para serem validados pelo esquema 'user'
       user.name = req.body.name;
       user.sobrenome = req.body.sobrenome;
-      /*user.password = req.body.password;*/
+      /*user.senha = req.body.senha;*/
       user.save(function (error) {
         if (error) res.send(error);
         res.json({ message: "Usuário atualizado com sucesso!" });
