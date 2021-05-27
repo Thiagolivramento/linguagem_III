@@ -90,8 +90,8 @@ router
 .post(function(req, res) {
   var user = new User();
   user.name = req.body.name;
-  user.login = req.body.login;
-  user.senha = req.body.senha;
+  user.sobrenome = req.body.sobrenome;
+  /*user.senha = req.body.senha;*/
 
   user.save(function (error){
     if (error) res.send(error);
@@ -134,8 +134,8 @@ router
       if (error) res.send(error);
       //A solicitação os dados para serem validados pelo esquema 'user'
       user.name = req.body.name;
-      user.login = req.body.login;
-      user.password = req.body.password;
+      user.sobrenome = req.body.sobrenome;
+      /*user.password = req.body.password;*/
       user.save(function (error) {
         if (error) res.send(error);
         res.json({ message: "Usuário atualizado com sucesso!" });
